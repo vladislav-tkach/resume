@@ -96,8 +96,8 @@
 % \printname is used to output the user's name in a large size
 \newcommand{\printname}{
 	\begingroup
-		\hfil{\MakeUppercase{\huge\bfseries\name}}\hfil % Style and output the user's name
-		\bigskip\break % Vertical whitespace below name
+		\hfil{\huge\bfseries\name}\hfil % Style and output the user's name
+		\smallskip\break % Vertical whitespace below name
 	\endgroup
 }
 

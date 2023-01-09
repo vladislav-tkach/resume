@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+\usepackage{fontawesome} % Font containing web-related icons
+\usepackage{hyperref} % Extensive support for hypertext
+\usepackage{xcolor} % Driver-independent color extensions
+
+%------------------------------------------------
+
+\name{Vladyslav Tkach} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+%\address{123 Broadway \\ City, State 12345} % Main address
+
+%\address{123 Pleasant Lane \\ City, State 12345} % A secondary address (optional)
+
+%\address{(011)~$\cdot$~899~$\cdot$~9881 \\ john@LaTeXTemplates.com} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+
+    {\Large \underline{C++ Software Engineer}} % Your position
+    \medskip
+
+\end{center}
+
+\begin{center}
+
+    \faPhone{ +38 (099) 115 9923 } % Your phone number
+    \hfill
+    \faEnvelope{ vladislautkach@gmail.com } % Your email
+    \hfill
+    \faPaperPlane{ \href{https://t.me/vladyslav_tkach_tg}{\color{blue}\underline{@vladyslav\_tkach\_tg}} } % Your Telegram
+    \hfill
+    \faLinkedin{ \href{https://www.linkedin.com/in/vladyslav-tkach/}{\color{blue}\underline{vladyslav-tkach}} } % Your LinkedIn
+
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+    \begin{center}
+    
+        \centering
+        \begin{tabular}{
+            @{}
+            >{\bfseries}l @{\hspace{3ex}}|
+            @{\hspace{3ex}} l @{\hspace{3ex}}|
+            @{\hspace{3ex}} l
+        }
+             & \textbf{Experienced at} & \textbf{Had experience with} \\
+            \hline
+		  Programming Languages & C++, Python & C, C\#, Java \\
+            \hline
+		  Development Tools & CMake, Git & GiHub Actions, GNU Make, gdb \\
+            \hline
+		  Technologies & Qt framework, GoogleTest & GNU/Linux, Boost, OpenCV \\
+            \hline
+		  Spoken Languages & \multicolumn{2}{@{} l}{Native Ukrainian speaker, advanced English proficiency} \\
+	   \end{tabular}
+
+    \end{center}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{\href{https://www.materialise.com/en}{\color{blue}Materialise} - Mimics Enlight CMF}{October 2021 - Present}{Software Engineer (C++, Python)}{Kyiv, Ukraine}
+        \item Developed, tested, debugged, and documented a planner application for cranio-maxillofacial surgical operations using C++ and Qt framework.
+        \item Strengthened Mimics Enlight cross-product platform and engaged in refactoring of existing code.
+		\item Applied the MatSDK libraries collection for implementation of new APIs to improve both performance and UX.
+        \item Worked within an agile team following Scrum methodology, actively participated in cross-team communication and collaboration.
+        \item Had experience with creating scripted UI tests using Mimics Python API and proprietary testing framework.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+    \begin{rSubsection}{\href{https://www.materialise.com/en}{\color{blue}Materialise} - \href{https://www.materialise.com/en/careers/students-graduates/internships}{\color{blue}C++ Academy}}{July 2021 - September 2021}{Intern (C++)}{Kyiv, Ukraine}
+        \item Worked on a 3D printing project in a team following Scrum methodology.
+        \item Implemented 3D geometry algorithms and used Qt3D for custom rendering and camera controls.
+        \item Learned about and practiced C++17 thoroughly including hands-on STL.
+        \item Investigated OOP concepts as well as design patterns with exercises.
+        \item Studied high-level debugging and error handling, test-driven development(TDD) technique, profiling and disassembly as well as parallel programming.
+        \item Learned Qt framework, practiced both Qt Widgets and QML.
+    \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+    \href{http://csc.knu.ua/en/}{\color{blue}\textbf{Taras Shevchenko National University of Kyiv}} \hfill {September 2019 - June 2023} \\ 
+    \textit{Faculty of Cybernetics and Computer Science} \hfill \textit{Kyiv, Ukraine} \\ 
+    B.S. in Computer Science \\
+
+    \href{http://upml.knu.ua/}{\color{blue}\textbf{Ukrainian Physics and Mathematics Lyceum of Kyiv University}} \hfill {September 2016 - May 2019} \\ 
+    \textit{GPA 10.5} \hfill \textit{Kyiv, Ukraine}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
