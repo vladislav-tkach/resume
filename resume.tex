@@ -1,152 +1,61 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 3.0 (December 17, 2022)
-%
-% This template originates from:
-% https://www.LaTeXTemplates.com
-%
-% Author:
-% Vel (vel@latextemplates.com)
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% License:
-% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{resume}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{xcolor}
 
-\documentclass[
-	%a4paper, % Uncomment for A4 paper size (default is US letter)
-	11pt, % Default font size, can use 10pt, 11pt or 12pt
-]{resume} % Use the resume class
-
-\usepackage{fontawesome} % Font containing web-related icons
-\usepackage{hyperref} % Extensive support for hypertext
-\usepackage{xcolor} % Driver-independent color extensions
-
-%------------------------------------------------
-
-\name{Vladyslav Tkach} % Your name to appear at the top
-
-% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
-% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
-
-%\address{123 Broadway \\ City, State 12345} % Main address
-
-%\address{123 Pleasant Lane \\ City, State 12345} % A secondary address (optional)
-
-%\address{(011)~$\cdot$~899~$\cdot$~9881 \\ john@LaTeXTemplates.com} % Contact information
-
-%----------------------------------------------------------------------------------------
+\name{Vladyslav Tkach}
+\specialty{Software Engineer}
 
 \begin{document}
+    \hspace*{\fill}
+    \faEnvelope{ }{vladislautkach@gmail.com}
+    \hspace*{\fill}
+    \faPaperPlane{ }{\href{https://t.me/vladyslav_tkach_tg}{\color{blue}\underline{\smash{@vladyslav\_tkach\_tg}}}}
+    \hspace*{\fill}
+    \faLinkedin{ }{\href{https://www.linkedin.com/in/vladyslav-tkach/}{\color{blue}\underline{\smash{vladyslav-tkach}}}}
+    \hspace*{\fill}
 
-\begin{center}
+    \begin{rSection}{Experience}
+    	\begin{rSubsection}
+            {\href{https://www.materialise.com/en}{\color{blue}\underline{\smash{Materialise}}} - \href{https://www.materialise.com/en/healthcare/mimics-enlight-cmf}{\color{blue}\underline{\smash{Mimics Enlight CMF}}}}{October 2021 - Present}{Software Engineer (C++, Python)}{Kyiv, Ukraine}
+            
+            \item Developed, tested, debugged, and documented a medical planner application for craniomaxillofacial surgical operations using \textbf{C++ and Qt framework}.
+            \item Strengthened Mimics Enlight \textbf{cross-product platform} and engaged in \textbf{refactoring} of existing code.
+    		\item Applied the MatSDK library collection implementing \textbf{new APIs} to improve both \textbf{performance and UX}.
+            \item Worked within an agile team following \textbf{Scrum} methodology and actively participated in \textbf{cross-team communication} and collaboration.
+            \item Facilitated seamless \textbf{onboarding}, providing \textbf{mentorship} to new team members, fostering growth and integration.
+            \item Had experience with creating scripted UI tests using Mimics \textbf{Python} API and proprietary testing framework.
+    	\end{rSubsection}
 
-    {\Large \underline{C++ Software Engineer}} % Your position
-    \medskip
+        \begin{rSubsection}
+            {\href{https://www.materialise.com/en}{\color{blue}\underline{\smash{Materialise}}} - \href{https://www.materialise.com/en/careers/students-graduates/internships}{\color{blue}\underline{\smash{C++ Academy}}}}{July 2021 - September 2021}{Intern (C++)}{Kyiv, Ukraine}
+            
+            \item Worked on a \textbf{3D printing} project in a team following \textbf{Scrum} methodology.
+            \item Implemented 3D geometry algorithms and used \textbf{Qt3D} for custom rendering and camera controls.
+            \item Learned about and practiced \textbf{C++17} thoroughly including hands-on \textbf{STL}.
+            \item Investigated \textbf{OOP} concepts as well as \textbf{design patterns} with exercises.
+            \item Studied high-level \textbf{debugging} and error handling, test-driven development(TDD) technique, profiling, and disassembly as well as parallel programming.
+        \end{rSubsection}
+    \end{rSection}
 
-\end{center}
+    \begin{rSection}{Certifications}
+        \begin{rSubsection}
+            {\href{https://www.uarust.com/}{\color{blue}\underline{\smash{Ukrainian Rust Community}}} - \href{https://github.com/rust-lang-ua/rustcamp}{\color{blue}\underline{\smash{Rust Bootcamp}}}}{December 2023 - April 2024}{Rust, Rust backend}{Ukraine}
+            
+            \item Covered \textbf{fundamentals} of compiled languages: memory model, typing, polymorphism, ownership, etc.
+            \item Examined \textbf{Rust concepts}: memory management (\texttt{Box}, \texttt{Pin}), ownership management (\texttt{Rc, Arc}), dispatching (generics, \texttt{dyn Trait}), thread safety (\texttt{Send}, \texttt{Sync}), interior mutability (\texttt{RefCell}, \texttt{Mutex}), etc.
+            \item Practiced \textbf{Rust idioms}: newtype, typestate, memory replace, generic in type out, exhaustivity, sealing, etc.
+            \item Applied \textbf{Rust infrastructure}: \texttt{chrono}, \texttt{chumsky}, \texttt{clap}, \texttt{config}, \texttt{im}, \texttt{mockall}, \texttt{proptest}, \texttt{quote}, \texttt{rayon}, \texttt{rust-argon2}, \texttt{serde}, \texttt{sha3}, \texttt{syn}, \texttt{tokio}, \texttt{tracing}, etc.
+            \item Discovered \textbf{backend} web-development basics: database integration (PostgreSQL, \texttt{sqlx}, \texttt{sea-query}), HTTP server (\texttt{axum}, \texttt{actix}) and client (\texttt{reqwest}), web API (REST, OpenAPI, GraphQL), auth (JWT, cookies).
+        \end{rSubsection}
+    \end{rSection}
 
-\begin{center}
-
-    \faPhone{ +38 (099) 115 9923 } % Your phone number
-    \hfill
-    \faEnvelope{ vladislautkach@gmail.com } % Your email
-    \hfill
-    \faPaperPlane{ \href{https://t.me/vladyslav_tkach_tg}{\color{blue}\underline{@vladyslav\_tkach\_tg}} } % Your Telegram
-    \hfill
-    \faLinkedin{ \href{https://www.linkedin.com/in/vladyslav-tkach/}{\color{blue}\underline{vladyslav-tkach}} } % Your LinkedIn
-
-\end{center}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Strengths}
-
-    \begin{center}
-    
-        \centering
-        \begin{tabular}{
-            @{}
-            >{\bfseries}l @{\hspace{3ex}}|
-            @{\hspace{3ex}} l @{\hspace{3ex}}|
-            @{\hspace{3ex}} l
-        }
-             & \textbf{Experienced at} & \textbf{Had experience with} \\
-            \hline
-		  Programming Languages & C++, Python & Rust, C, C\#, Java \\
-            \hline
-		  Development Tools & CMake, Git & Cargo, GitHub Actions, GNU Make \\
-            \hline
-		  Technologies & Qt framework, GoogleTest & Boost, GNU/Linux, OpenCV \\
-            \hline
-		  Spoken Languages & \multicolumn{2}{@{} l}{Native Ukrainian speaker, advanced English proficiency} \\
-	   \end{tabular}
-
-    \end{center}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Experience}
-
-	\begin{rSubsection}{\href{https://www.materialise.com/en}{\color{blue}Materialise} - \href{https://www.materialise.com/ja/healthcare/mimics-enlight-cmf}{\color{blue}Mimics Enlight CMF}}{October 2021 - Present}{Software Engineer (C++, Python)}{Kyiv, Ukraine}
-        \item Developed, tested, debugged, and documented a medical planner application for craniomaxillofacial surgical operations using C++ and Qt framework.
-        \item Strengthened Mimics Enlight cross-product platform and engaged in refactoring of existing code.
-		\item Applied the MatSDK libraries collection for implementation of new APIs to improve both performance and UX.
-        \item Worked within an agile team following Scrum methodology and actively participated in cross-team communication and collaboration.
-        \item Had experience with creating scripted UI tests using Mimics Python API and proprietary testing framework.
-	\end{rSubsection}
-
-%------------------------------------------------
-
-    \begin{rSubsection}{\href{https://www.materialise.com/en}{\color{blue}Materialise} - \href{https://www.materialise.com/en/careers/students-graduates/internships}{\color{blue}C++ Academy}}{July 2021 - September 2021}{Intern (C++)}{Kyiv, Ukraine}
-        \item Worked on a 3D printing project in a team following Scrum methodology.
-        \item Implemented 3D geometry algorithms and used Qt3D for custom rendering and camera controls.
-        \item Learned about and practiced C++17 thoroughly including hands-on STL.
-        \item Investigated OOP concepts as well as design patterns with exercises.
-        \item Studied high-level debugging and error handling, test-driven development(TDD) technique, profiling, and disassembly as well as parallel programming.
-        \item Learned Qt framework, practiced both Qt Widgets and QML.
-    \end{rSubsection}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-    \href{http://csc.knu.ua/en/}{\color{blue}\textbf{Taras Shevchenko National University of Kyiv}} \hfill {September 2019 - June 2023} \\ 
-    \textit{Faculty of Cybernetics and Computer Science} \hfill \textit{Kyiv, Ukraine} \\ 
-    B.S. in Computer Science \\
-
-    \href{http://upml.knu.ua/}{\color{blue}\textbf{Ukrainian Physics and Mathematics Lyceum of Kyiv University}} \hfill {September 2016 - May 2019} \\ 
-    \textit{GPA 10.5} \hfill \textit{Kyiv, Ukraine}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-	%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
-
+    \begin{rSection}{Education}
+        \begin{rSubsection}
+            {\href{http://csc.knu.ua/en/}{\color{blue}\underline{\smash{Taras Shevchenko National University of Kyiv}}}}{September 2019 - June 2023}{Faculty of Cybernetics and Computer Science}{Kyiv, Ukraine}
+            
+            \item B.S. in Computer Science
+        \end{rSubsection}
+    \end{rSection}
 \end{document}
